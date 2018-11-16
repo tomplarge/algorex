@@ -1,0 +1,8 @@
+language: elixir
+elixir: '1.7.3'
+otp_release: '21.0'
+script:
+  - mix format --check-formatted
+  - mix lint
+  - mix dialyzer
+  - mix test
