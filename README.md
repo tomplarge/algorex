@@ -1,6 +1,6 @@
 # Algorex
 
-**TODO: Add description**
+Randomized (and maybe some non-randomized) algorithms implemented in Elixir.
 
 ## Installation
 
