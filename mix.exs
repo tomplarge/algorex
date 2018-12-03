@@ -34,7 +34,7 @@ defmodule Algorex.MixProject do
   defp aliases do
     [
       dialyzer: ["dialyzer --halt-exit-status"],
-      lint: ["credo list --strict"]
+      lint: ["credo list"]
     ]
   end
 end

@@ -1,14 +1,15 @@
 defmodule Algorex do
+  @moduledoc false
 
   @spec seed() :: :undefined | tuple
   def seed() do
-    << a :: 32, b :: 32, c :: 32 >> = :crypto.strong_rand_bytes(12)
+    <<a::32, b::32, c::32>> = :crypto.strong_rand_bytes(12)
 
-    :sfmt.seed(a,b,c)
+    :sfmt.seed(a, b, c)
   end
 
   @spec uniform() :: float
-  def uniform(), do: :sfmt.uniform
+  def uniform(), do: :sfmt.uniform()
 
   @spec uniform(integer) :: integer
   def uniform(n), do: :sfmt.uniform(n)
